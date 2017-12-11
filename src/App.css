@@ -1,0 +1,67 @@
+.catTile{
+  margin: 0.5rem;
+}
+
+.catTile.highlight{
+  background-color: #24305E !important;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.fade-enter {
+  max-width: 0;
+}
+
+.fade-enter.fade-enter-active {
+  max-width: 91.666667%;
+  transition: max-width 400ms ease-out;
+}
+
+.fade-exit {
+  max-width: 91.666667%;
+}
+
+.fade-exit.fade-exit-active {
+  max-width: 0;
+  transition: max-width 200ms ease-in;
+}
+
+@media (min-width: 768px) {
+  .fade-enter {
+    max-width: 17%;
+  }
+  .fade-enter.fade-enter-active {
+    max-width: 41.666667%;
+    transition: max-width 400ms ease-out;
+  }
+
+  .fade-exit {
+    max-width: 41.666667%;
+  }
+  .fade-exit.fade-exit-active {
+    max-width: 17%;
+    transition: max-width 200ms ease-in;
+  }
+}
+
+@media (min-width: 992px) {
+  .fade-enter {
+    max-width: 0%;
+  }
+  .fade-enter.fade-enter-active {
+    max-width: 25%;
+    transition: max-width 400ms ease-out;
+  }
+
+  .fade-exit {
+    max-width: 25%;
+  }
+  .fade-exit.fade-exit-active {
+    max-width: 0%;
+    transition: max-width 200ms ease-in;
+  }
+}
