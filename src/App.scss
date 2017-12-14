@@ -1,0 +1,108 @@
+@import "./materialize/sass/materialize.scss";
+@import "./bootstrap-grid.min.css";
+
+.notfound-box{
+  text-align: center;
+  color: rgb(217, 83, 79);
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+.stulever{
+  width: 50px !important;
+  height: 19px !important;
+}
+
+.switch label{
+  font-size: 1rem;
+}
+
+.switch label .stulever:before, .switch label .stulever:after{
+  width: 26px;
+  height: 26px;
+}
+
+.switch label input[type=checkbox]:checked+.lever:before, .switch label input[type=checkbox]:checked+.lever:after{
+  left: 25px;
+}
+
+.catTile{
+  margin: 0.5rem;
+}
+
+.catTile-adults {
+  background-color: $primary-color;
+
+  &:hover {
+    background-color: lighten($primary-color, 5%);
+  }
+
+  &:focus {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.catTile.highlight{
+  background-color: #24305E !important;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.fade-enter {
+  max-width: 0;
+}
+
+.fade-enter.fade-enter-active {
+  max-width: 91.666667%;
+  transition: max-width 400ms ease-out;
+}
+
+.fade-exit {
+  max-width: 91.666667%;
+}
+
+.fade-exit.fade-exit-active {
+  max-width: 0;
+  transition: max-width 200ms ease-in;
+}
+
+@media (min-width: 768px) {
+  .fade-enter {
+    max-width: 17%;
+  }
+  .fade-enter.fade-enter-active {
+    max-width: 41.666667%;
+    transition: max-width 400ms ease-out;
+  }
+
+  .fade-exit {
+    max-width: 41.666667%;
+  }
+  .fade-exit.fade-exit-active {
+    max-width: 17%;
+    transition: max-width 200ms ease-in;
+  }
+}
+
+@media (min-width: 992px) {
+  .fade-enter {
+    max-width: 0%;
+  }
+  .fade-enter.fade-enter-active {
+    max-width: 25%;
+    transition: max-width 400ms ease-out;
+  }
+
+  .fade-exit {
+    max-width: 25%;
+  }
+  .fade-exit.fade-exit-active {
+    max-width: 0%;
+    transition: max-width 200ms ease-in;
+  }
+}

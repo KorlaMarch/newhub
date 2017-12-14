@@ -20,7 +20,7 @@ const SearchBar = ({ text, onChange, isStudent }) => {
     <Autocomplete
       title="Search for..."
       data={autodata}
-      limit="20"
+      limit="5"
       minLength="1"
       value={text}
       onChange={onChange}

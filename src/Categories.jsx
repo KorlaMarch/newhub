@@ -26,6 +26,7 @@ const Categories = ({ isStudent,selected,onChange }) => {
           <CategoryTile
             category={element}
             highlight={selected === element.name}
+            isStudent={isStudent}
             onClick={
               (name) => {
                 if (name === selected) {
@@ -36,7 +37,7 @@ const Categories = ({ isStudent,selected,onChange }) => {
               }
             }
           />
-      </Fade>
+        </Fade>
       );
     }
   });

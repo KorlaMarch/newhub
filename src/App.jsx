@@ -62,7 +62,7 @@ class App extends Component {
     ));
 
     return (
-      <div className="container">
+      <div className="container" >
         <AppHeader onSwitchClick={this.handleIsStudentClick} isStudent={this.state.isStudent} />
         <SearchBar
           text={this.state.searchValue}

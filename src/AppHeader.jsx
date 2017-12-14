@@ -9,7 +9,7 @@ const AppHeader = ({ isStudent, onSwitchClick }) => {
         <label>
           Student
           <input type="checkbox" onClick={onSwitchClick} checked={!isStudent} />
-          <span className="lever" />
+          <span className="lever stulever" />
           Adults
         </label>
       </div>
